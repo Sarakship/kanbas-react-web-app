@@ -1,7 +1,7 @@
 .wd-modules,
 .wd-modules * {
   border-radius: 0%;
-  
+
   border: none;
   margin: 0px;
   padding: 0px;
@@ -36,92 +36,87 @@
   background-color: black;
 }
 
-.d-block > button{
+.d-block > button {
   background-color: black;
   color: white;
 }
-.d-block > a>span{
+.d-block > a > span {
   background-color: black;
   color: white;
-  text-align:center;
-
+  text-align: center;
 }
 
-.flex-grow-0>ul>button {
+.flex-grow-0 > ul > button {
   box-sizing: border-box;
   padding-block: 1px;
   padding-inline: 6px;
   border-radius: 1px;
 }
 
-.btn-mod{
-  background: #f5f5f5 !important; 
-    color: #2d3b45 !important;
-    border: 1px solid ;
-    border-color: #c7cdd1;
-    border-radius: 3px;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    padding: 5px;
+.btn-mod {
+  background: #f5f5f5 !important;
+  color: #2d3b45 !important;
+  border: 1px solid;
+  border-color: #c7cdd1;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
 }
 
-
-
-li> a {
+li > a {
   text-decoration: none;
 }
 
-.list-icon-left{
-  float: left; 
+.list-icon-left {
+  float: left;
   width: 5%;
   padding-top: 10px;
   text-align: center;
 }
 
-.list-icon-left-side{
-  float: left; 
+.list-icon-left-side {
+  float: left;
   text-align: center;
   padding-left: 10px;
 }
 
-.list-content{
-  float: left; width: 80%;
-  
+.list-content {
+  float: left;
+  width: 80%;
 }
 
-.list-content > a{
+.list-content > a {
   color: black;
 }
-.list-content-body{
+.list-content-body {
   text-align: left;
   padding-top: 5px;
   width: 80%;
 }
 
-.list-content > a{
+.list-content > a {
   text-decoration: none;
   text-align: center;
 }
 
-.list-icon-right{
-  float: right; width: 20%;
+.list-icon-right {
+  float: right;
+  width: 20%;
   padding-top: 10px;
   text-align: center;
 }
 
-.list-icon-right-side{
-  float: right; width: 20%;
+.list-icon-right-side {
+  float: right;
+  width: 20%;
   text-align: center;
   padding-right: 5px;
 }
-.header-nav{
-  display: flex;
+.header-nav {
   align-items: center;
   border-bottom: 1px solid #c7cdd1;
   margin: 0 24px;
   min-height: 4.5rem;
-  box-sizing: border-box;
- 
-  float:left;
 }

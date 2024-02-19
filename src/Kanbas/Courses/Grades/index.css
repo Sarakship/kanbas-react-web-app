@@ -1,0 +1,16 @@
+table tr td {
+    border: 1px solid gray;
+    width: 200px;
+    text-align: center;
+  }
+  table tr th {
+    border: 1px solid gray;
+    text-align: center;
+  }
+
+  th[scope="row"] {
+    color: red !important;
+    width: 110 !important;
+  }
+
+ 

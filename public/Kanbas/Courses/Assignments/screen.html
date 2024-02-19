@@ -20,7 +20,9 @@
   />
   </head>
   <body>
-    <div class="d-block d-md-none" style="height: 50px">
+    <div class="d-block d-md-none" style="height: 50px; position: sticky !important ;">
+      <div class="row justify-content-md-center" style="z-index: 1;background-color: black;">
+        <div class="col-2 sticky">
       <a
         data-bs-toggle="collapse"
         href="#collapseWidthExample"
@@ -39,26 +41,27 @@
           "
         ></i>
       </a>
-      <span>
-      <span
-        style="
+      </div>
+      <div class="col-8 sticky" style="position: stickey !important ;">
+      <p style="
           text-align: center;
-          position: relative;
-          padding-left: 160px;
-          color: white;
-        "
-        >CS5610-Web Development Course</span
-      ><br />
-      <span
-        style="
-          text-align: center;
-          position: relative;
+          position: fixed;
           text-decoration: none;
           color: white;
-          padding-left: 250px;
+          padding-left: 20px;
+        ">CS5610-Web Development Course</p>
+        <br />
+      <p
+        style="
+          text-align: center;
+          position: fixed;
+          text-decoration: none;
+          color: white;
+          padding-left: 110px;
         "
-        >Modules</span
-      ></span>
+        >Modules</p>
+      </div>
+      <div class="col-2 sticky">
       <a
         data-bs-toggle="collapse"
         href="#collapseExample"
@@ -68,18 +71,20 @@
         style="float: right; text-align: center"
       >
         <i
-          class="fa fa-chevron-down"
+          class="fa fa-chevron-down p-3"
           style="
             color: white;
             background-color: black;
+            
             padding: 5px;
             margin-bottom: 2 rem;
             border-color: black;
           "
         ></i>
       </a>
+      </div>
     </div>
-
+</div>
     <div class="collapse" id="collapseExample">
       <div class="card card-body">
         <ul style="list-style-type: none">
@@ -295,11 +300,14 @@
         </ul>
           </div>
 
-          <div class="d-flex flex-column" style="width: -webkit-fill-available;">
+          <div class="d-flex flex-column" >
+
             <div
-              class="header-nav d-flex"
-              style="padding-top: 15px; height: fit-content"
+              class="header-nav d-inline"
+              style="padding-top: 15px; height: fit-content;"
             >
+            <div class="row align-items-center">
+              <div class="col-10 float-start">
               <div style="float: left; padding-right: 10px">
                 <i class="fa fa-bars" style="color: red"></i>
               </div>
@@ -308,13 +316,18 @@
                   <li class="breadcrumb-item">
                     <a href="#" style="color: red">CS5610.11744.202410</a>
                   </li>
-                  <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                  <li class="breadcrumb-item " aria-current="page">Modules</li>
                 </ol>
               </nav>
-              <div style="float:right;padding-left: 700px;">
-              <button style="float:right" class="btn-mod"><i class="fa fa-glasses"></i>Student&nbsp;View</button></div>
+              </div>
+              <div class="col-2 ms-auto float-end" style="padding-left: 50px;">
+             
+                <button  class="btn-mod"><i class="fa fa-glasses"></i> Student&nbsp;View</button>
+            </div>
+          </div>
             </div>
           <div class="d-flex">
+            <div class="d-none d-md-block">
             <ul class="wd-navigation">
               <li>
                 <p><i style="color:grey;font-size: small;">2024_10 Fall 2023</i></p>
@@ -370,18 +383,18 @@
                 <a href="/Kanbas/Courses/Settings/screen.html">Settings</a>
               </li>
             </ul>
-         
+         </div>
           <div class="flex-fill">
            <br/> 
-           <div class="form-group row">
-            <div class="col-sm-9 " >
-            <input class="btn-mod" style="background-color: white !important;width: 700px" placeholder="Search for Assignments"></div>
+           <div class="d-flex" >
+            
+            <input class="btn-mod" style="background-color: white !important;width: 700px" placeholder="Search for Assignments">
             <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
-            <div class="col-sm-3" >      
-            <button class="btn-mod">+Group</button>
+                
+            <button class="btn btn-light">+Group</button>
                     <button class="btn" style="background-color: red !important;">+Assignment</button>
-                    <button class="btn-mod"style="height:35px"><i class="fa fa-ellipsis-v"></i></button>
-                  </div></div>
+                    <button class="btn btn-grey"style="height:35px"><i class="fa fa-ellipsis-v"></i></button>
+                  </div>
             <hr/>
          
             <ul class="list-group wd-modules">
