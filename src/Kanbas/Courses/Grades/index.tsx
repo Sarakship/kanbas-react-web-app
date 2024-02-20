@@ -1,6 +1,7 @@
 import { assignments, enrollments, grades, users } from "../../Databases";
 import { useParams } from "react-router-dom";
 import Buttons from "./Buttons";
+import { RiExpandUpDownFill } from "react-icons/ri";
 import "./index.css";
 function Grades() {
   const { courseId } = useParams();
@@ -27,7 +28,7 @@ function Grades() {
                     
                      const grade = grades.find(
                        (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
-                       return (<td style={{textAlign: 'center'}}><input value={grade?.grade} style={{textAlign: 'center'}} /></td>);
+                       return (<td style={{textAlign: 'center'}}><input value={grade?.grade} style={{textAlign: 'center',width:'30px'}} /><RiExpandUpDownFill/></td>);
                        })}
                 </tr>);
             })}

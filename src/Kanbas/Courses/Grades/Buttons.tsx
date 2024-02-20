@@ -66,15 +66,14 @@ function Buttons(){
       <div className="row " style={{paddingLeft:'5px'}}>
         <div className="col-6">
         <p ><b style={{fontSize:'large'}}>Student Names</b></p>
-              <select className="form-select" aria-label="Default select example">
-                <option selected>&#128269;Search students</option>
-              </select>
+              <input className="form-select" aria-label="Default select example" placeholder="&#128269;Search students"/>
+                
+             
         </div>
         <div className="col-6">
         <p ><b style={{fontSize:'large'}}>Assignment Names</b></p>
-              <select className="form-select" aria-label="Default select example">
-                <option selected>&#128269;Search assignment</option>
-              </select>
+        <input className="form-select" aria-label="Default select example" placeholder="&#128269;Search assignments"/>
+
         </div>
       </div>
       <p></p>
