@@ -119,7 +119,8 @@ function ModuleList() {
               {module.name}           
               <p style={{paddingLeft:"25px",fontSize:"small"}}>{module.description}</p>
               </div>
-              <div className="col-4 float-end">
+              <div className="col-3 ">
+              <span className="float-end ">
               <button
               type="button"
               className="btn btn-danger "
@@ -134,13 +135,16 @@ function ModuleList() {
                 onClick={() => dispatch(setModule(module))}>
                 Edit
               </button>
-              
-              
-                <FaCheckCircle className="text-success" />
-                <FaPlus className="ms-2" />
-                <FaEllipsisV className="ms-2" />
-            
+              </span>
               </div>
+              <div className="col-2 ">
+                <span className="float-end ">
+                <FaCheckCircle className="text-success " />
+                <FaPlus className="ms-2 " />
+                <FaEllipsisV className="ms-2 " />
+                </span>
+                </div>
+              
               </div>
               {module._id === module._id && (
 
